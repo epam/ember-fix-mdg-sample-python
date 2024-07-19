@@ -25,8 +25,9 @@ Modify config/sample_md_client.cfg according to your Ember configuration as foll
 
 * Point SocketConnectHost and SocketConnectPort to your Deltix FIX Gateway,
 * Make sure SenderCompID, TargetCompID match the FIX Session you want to connect as.
-* I password is required modify user name and password in fix_session.py
+* If password is required modify username and password in Application.toAdmin() of fix_session.py
 * Update FileStorePath and FileLogPath if necessary.
+* Update TransportDataDictionary and AppDataDictionary to point to FIXT11.xml and FIX50SP2_Custom.xml files. FIXT11.xml is included with QuickFIX and FIX50SP2_Custom.xml is located in quickfix_dict folder of this sample.
 
 ## **Run**
 
